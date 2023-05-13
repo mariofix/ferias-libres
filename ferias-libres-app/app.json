@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "scheme": "ferias",
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/icon.png"
+    },
+    "name": "ferias-libres-app",
+    "slug": "ferias-libres",
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    },
+    "owner": "mariofix",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#ffffff",
+      "resizeMode": "cover"
+    },
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": ""
+        }
+      },
+      "package": "com.mariofix.feriaslibres"
+    }
+  }
+}
