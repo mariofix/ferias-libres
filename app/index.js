@@ -1,6 +1,7 @@
 import React from 'react';
+import { Stack } from "expo-router";
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Image, Text } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { MultipleSelectList } from 'react-native-dropdown-select-list';
 import ferias from '../assets/ferias.json';
@@ -36,6 +37,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <View style={styles.container}>
+        <Stack.Screen options={{ title: " Ferias Libres" }} />
         <View style={styles.selectionContainer}>
           <MultipleSelectList
             style={styles.lista}
@@ -94,10 +96,15 @@ const styles = StyleSheet.create({
   lista: {
     alignContent: 'center',
     alignItems: 'center',
-    width: '100%',
+    width: '90%',
     height: '100%',
+    backgroundColor: 'white',
   },
   lista_box: {
-    marginTop: 30,
+    marginTop: 5,
+    backgroundColor: 'white',
+    width: '90%',
+    alignSelf: 'center',
+    opacity: 100,
   }
 });

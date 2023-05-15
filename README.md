@@ -1,19 +1,10 @@
-# Expo Router Example
 
-Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
+# Ferias Libres
 
-## 🚀 How to use
+Ferias libres de chile
 
-```sh
-npx create-react-native-app -t with-router
-```
+[![Node.js CI](https://github.com/mariofix/ferias-libres/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/mariofix/ferias-libres/actions/workflows/node.js.yml)
 
-## 📝 Notes
+# Icono Aplicacion
 
-- [Expo Router: Docs](https://expo.github.io/router)
-- [Expo Router: Repo](https://github.com/expo/router)
-- [Request for Comments](https://github.com/expo/router/discussions/1)
-
-
-# App Icon
 https://www.iconfinder.com/icons/3890936/buy_cart_market_purchase_shop_shopping_store_icon
