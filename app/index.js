@@ -11,7 +11,7 @@ export default function App() {
   const [categories, setCategories] = React.useState([]);
 
   const comunasSeleccionadas = (seleccion) => {
-    if (seleccion.length == 0) {
+    if (seleccion.length === 0) {
       console.log("Limpiando Marcadores");
       return;
     };
