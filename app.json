@@ -1,15 +1,24 @@
 {
   "expo": {
     "scheme": "ferias",
+    "description": "Ferias Libres de Chile",
+    "userInterfaceStyle": "automatic",
     "web": {
       "bundler": "metro",
       "favicon": "./assets/icon.png"
     },
+    "githubUrl": "https://github.com/mariofix/ferias-libres",
+    "orientation": "portrait",
+    "primaryColor": "#20232a",
+    "platforms": [
+      "android",
+      "web"
+    ],
     "name": "ferias-libres-app",
     "slug": "ferias-libres",
     "extra": {
       "eas": {
-        "projectId": ""
+        "projectId": "7fcfa05f-ea0c-4684-bc2f-3a542d9fb924"
       }
     },
     "owner": "mariofix",
@@ -19,15 +28,12 @@
       "resizeMode": "cover"
     },
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "automatic",
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png"
-      },
       "config": {
         "googleMaps": {
-          "apiKey": ""
-        }
+          "apiKey": "AIzaSyB_WRdJFyJ98bXRgJVp-Ak6JcBFQokfpQk"
+        },
+        "versionCode": 1
       },
       "package": "com.mariofix.feriaslibres"
     }
