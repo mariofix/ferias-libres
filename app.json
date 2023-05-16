@@ -9,7 +9,7 @@
     "platforms": [
       "android"
     ],
-    "name": "ferias-libres-app",
+    "name": "Ferias Libres",
     "slug": "ferias-libres",
     "extra": {
       "eas": {

@@ -11,7 +11,7 @@ export default function App() {
   const [categories, setCategories] = React.useState([]);
 
   const comunasSeleccionadas = (seleccion) => {
-    if (seleccion.length === 0) {
+    /* if (seleccion.length === 0) {
       console.log("Limpiando Marcadores");
       return;
     };
@@ -23,7 +23,7 @@ export default function App() {
           console.log(row.slug + " found!")
         }
       })
-    });
+    }); */
   };
 
   const data = [
@@ -49,7 +49,7 @@ export default function App() {
             searchPlaceholder="buscar..."
             notFoundText="Por ahora no tenemos esa comuna. Avisame!"
             boxStyles={styles.lista_box}
-            onSelect={() => comunasSeleccionadas(categories)}
+          // onSelect={() => comunasSeleccionadas(categories)}
           />
         </View>
         <View style={styles.mapContainer}>
@@ -61,7 +61,27 @@ export default function App() {
               latitudeDelta: 0.1,
               longitudeDelta: 0.3
             }}
-            provider={PROVIDER_GOOGLE} />
+            provider={PROVIDER_GOOGLE}>
+            {
+              categories.map((seleccion) => {
+                // return (
+                //   <Text key={item} style={{ marginTop: 10, color: 'gray' }}>{item}</Text>
+                // )
+                if (seleccion.length === 0) {
+                  console.log("Limpiando Marcadores");
+                  return;
+                };
+                console.log("Slug: " + seleccion);
+                
+                ferias.forEach(row => {
+                  if (row.slug == seleccion) {
+                    console.log(row.slug + " found!");
+                    
+                  }
+                });
+              })
+            }
+          </MapView>
         </View>
       </View>
     </SafeAreaProvider>
@@ -77,7 +97,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
   },
   selectionContainer: {
-    backgroundColor: 'lightgreen',
+    backgroundColor: '#A7D49B',
     width: '100%',
     height: '20%',
     elevation: 3,

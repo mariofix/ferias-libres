@@ -15,9 +15,9 @@ export default function Layout() {
     initialRouteName="index"
     screenOptions={{
       headerStyle: {
-        backgroundColor: "#f4511e",
+        backgroundColor: "#FF595E",
       },
-      headerTintColor: "#fff",
+      headerTintColor: "#070707",
       headerTitleStyle: {
         fontWeight: "bold",
       },

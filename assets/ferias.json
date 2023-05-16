@@ -1,6 +1,12 @@
 [
     {
         "slug": "nunoa",
+        "ubicacion": {
+            "latitude": -33.456595,
+            "longitude": -70.5985254,
+            "latitudeDelta": 0.1,
+            "longitudeDelta": 0.3
+        },
         "ferias": [
             {
                 "nombre": "Matta Oriente",
