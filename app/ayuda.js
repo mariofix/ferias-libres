@@ -1,14 +1,15 @@
-import { StyleSheet, Text, View, Button } from "react-native";
-import { Link } from 'expo-router';
+import { useRouter, useSearchParams } from "expo-router";
+import { Button, StyleSheet, Text, View } from "react-native";
+
 
 export default function Page() {
-  
+  const router = useRouter();
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <Link href="/comuna/nunoa" style={styles.subtitle}>Ñuñoa</Link>
-        <Link href="/comuna/las-condes" style={styles.subtitle}>Las Condes</Link>
-        <Link href="/comuna/Providencia" style={styles.subtitle}>Providencia</Link>
+        <Text style={styles.title}>Ayuda</Text>
+        <Text style={styles.subtitle}>Aiudaaaa.</Text>
+        <Button onPress={() => router.back()} title ="Inicio" />
       </View>
     </View>
   );
