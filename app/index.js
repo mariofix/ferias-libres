@@ -1,14 +1,18 @@
 import { StyleSheet, Text, View, Button } from "react-native";
-import { Link } from 'expo-router';
+import { Link, Stack } from 'expo-router';
+import { Appearance, useColorScheme } from 'react-native';
 
 export default function Page() {
-  
+  let colorScheme = useColorScheme();
+  console.log(colorScheme);
   return (
     <View style={styles.container}>
+      <Stack.Screen options={{ title: "Ferias Libres" }} />
       <View style={styles.main}>
         <Link href="/comuna/nunoa" style={styles.subtitle}>Ñuñoa</Link>
         <Link href="/comuna/las-condes" style={styles.subtitle}>Las Condes</Link>
         <Link href="/comuna/Providencia" style={styles.subtitle}>Providencia</Link>
+        <Link href="/ayuda" style={styles.subtitle}>Aiudaaaa</Link>
       </View>
     </View>
   );

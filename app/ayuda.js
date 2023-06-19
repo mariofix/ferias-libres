@@ -1,4 +1,4 @@
-import { useRouter, useSearchParams } from "expo-router";
+import { useRouter, Stack } from "expo-router";
 import { Button, StyleSheet, Text, View } from "react-native";
 
 
@@ -6,6 +6,7 @@ export default function Page() {
   const router = useRouter();
   return (
     <View style={styles.container}>
+      <Stack.Screen options={{ title: "Ayuda" }} />
       <View style={styles.main}>
         <Text style={styles.title}>Ayuda</Text>
         <Text style={styles.subtitle}>Aiudaaaa.</Text>

@@ -1,4 +1,4 @@
-import { useRouter, useGlobalSearchParams } from "expo-router";
+import { useRouter, useGlobalSearchParams, Stack } from "expo-router";
 import { Button, StyleSheet, Text, View } from "react-native";
 
 
@@ -10,6 +10,7 @@ export default function Page() {
   console.log(comuna);
   return (
     <View style={styles.container}>
+      <Stack.Screen options={{ title: comuna }} />
       <View style={styles.main}>
         <Text style={styles.title}>Comuna</Text>
         <Text style={styles.subtitle}>{comuna}</Text>
