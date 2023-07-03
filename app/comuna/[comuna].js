@@ -1,21 +1,44 @@
-import { useRouter, useGlobalSearchParams, Stack } from "expo-router";
-import { Button, StyleSheet, Text, View } from "react-native";
-
+import { useRouter, useLocalSearchParams, Stack } from "expo-router";
+import { StyleSheet, View } from "react-native";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Page() {
-  const router = useRouter();
+  const [info, setInfo] = useState();
+  const headers = { "User-Agent": "ferias-libres/1.1.0 app/comuna/[comuna]" };
 
-  const {comuna} = useGlobalSearchParams();
+  const { comuna } = useLocalSearchParams();
 
-  console.log(comuna);
+  useEffect(() => {
+    const cancelToken = axios.CancelToken.source();
+    console.debug(comuna);
+    axios
+      .get(`https://ferias-libres.mariofix.com/api/ferias/${comuna}`, {
+        cancelToken: cancelToken.token,
+        headers: headers,
+      })
+      .then((respuesta) => {
+        console.info(respuesta.data);
+        setInfo(respuesta.data);
+      })
+      .catch((err) => {
+        console.warn(err);
+      });
+    return () => {
+      cancelToken.cancel();
+    };
+  }, []);
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ title: comuna }} />
-      <View style={styles.main}>
-        <Text style={styles.title}>Comuna</Text>
-        <Text style={styles.subtitle}>{comuna}</Text>
-        <Button onPress={() => router.back()} title ="Inicio" />
-      </View>
+      <Stack.Screen options={{ title: "Comuna" }} />
+      <View style={styles.main}></View>
+      {info.ferias?.map((feria) => {
+        return (
+          <Link key={feria.slug} href="/" style={styles.subtitle}>
+            {feria.nombre}
+          </Link>
+        );
+      })}
     </View>
   );
 }

@@ -12,16 +12,13 @@
       "bundler": "metro"
     },
     "platforms": [
-      "android",
-      "web"
+      "android"
     ],
-    
     "owner": "mariofix",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain"
     },
     "icon": "./assets/icon.png"
-    
   }
 }

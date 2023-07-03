@@ -1,18 +1,46 @@
-import { StyleSheet, Text, View, Button } from "react-native";
-import { Link, Stack } from 'expo-router';
-import { Appearance, useColorScheme } from 'react-native';
+import { StyleSheet, View } from "react-native";
+import { Link, Stack } from "expo-router";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Page() {
-  let colorScheme = useColorScheme();
-  console.log(colorScheme);
+  const [comunas, setComunas] = useState();
+  const headers = { "User-Agent": "ferias-libres/1.1.0 app/index" };
+
+  useEffect(() => {
+    const cancelToken = axios.CancelToken.source();
+
+    axios
+      .get("https://ferias-libres.mariofix.com/api/comunas/", {
+        cancelToken: cancelToken.token,
+        headers: headers,
+      })
+      .then((respuesta) => {
+        setComunas(respuesta.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    return () => {
+      cancelToken.cancel();
+    };
+  }, []);
+
   return (
     <View style={styles.container}>
       <Stack.Screen options={{ title: "Ferias Libres" }} />
       <View style={styles.main}>
-        <Link href="/comuna/nunoa" style={styles.subtitle}>Ñuñoa</Link>
-        <Link href="/comuna/las-condes" style={styles.subtitle}>Las Condes</Link>
-        <Link href="/comuna/Providencia" style={styles.subtitle}>Providencia</Link>
-        <Link href="/ayuda" style={styles.subtitle}>Aiudaaaa</Link>
+        {comunas?.map((comuna) => {
+          return (
+            <Link
+              key={comuna.slug}
+              href={{ pathname: "/comuna/[c]", params: { c: comuna.slug } }}
+              style={styles.subtitle}
+            >
+              {comuna.nombre}
+            </Link>
+          );
+        })}
       </View>
     </View>
   );
