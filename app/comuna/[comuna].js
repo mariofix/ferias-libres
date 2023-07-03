@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default function Page() {
   const [info, setInfo] = useState();
-  const headers = { "User-Agent": "ferias-libres/1.1.0 app/comuna/[comuna]" };
+  const headers = { "User-Agent": "ferias-libres/1.1.1 app/comuna/[comuna]" };
 
   const { comuna } = useLocalSearchParams();
 

@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default function Page() {
   const [comunas, setComunas] = useState();
-  const headers = { "User-Agent": "ferias-libres/1.1.0 app/index" };
+  const headers = { "User-Agent": "ferias-libres/1.1.1 app/index" };
 
   useEffect(() => {
     const cancelToken = axios.CancelToken.source();
