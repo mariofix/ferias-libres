@@ -1,7 +1,7 @@
 {
   "expo": {
     "scheme": "ferias",
-    "name": "ferias-libres",
+    "name": "Ferias Libres",
     "slug": "ferias-libres",
     "description": "Ferias Libres de Chile",
     "userInterfaceStyle": "automatic",
@@ -19,6 +19,15 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain"
     },
-    "icon": "./assets/icon.png"
+    "icon": "./assets/icon.png",
+    "version": "1.1.0",
+    "android": {
+      "package": "com.mariofix.ferias-libres",
+      "versionCode": "2",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    }
   }
 }
