@@ -22,11 +22,16 @@
     "icon": "./assets/icon.png",
     "version": "1.1.0",
     "android": {
-      "package": "com.mariofix.ferias-libres",
+      "package": "com.mariofix.feriaslibres",
       "versionCode": "2",
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7fcfa05f-ea0c-4684-bc2f-3a542d9fb924"
       }
     }
   }
