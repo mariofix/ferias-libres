@@ -11,8 +11,12 @@
     "web": {
       "bundler": "metro"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "web"
     ],
     "owner": "mariofix",
     "splash": {
@@ -20,10 +24,10 @@
       "resizeMode": "contain"
     },
     "icon": "./assets/icon.png",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "android": {
       "package": "com.mariofix.feriaslibres",
-      "versionCode": 3,
+      "versionCode": 4,
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
@@ -33,6 +37,20 @@
       "eas": {
         "projectId": "7fcfa05f-ea0c-4684-bc2f-3a542d9fb924"
       }
+    },
+    "plugins": [
+      "sentry-expo"
+    ],
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "ferias-libres",
+            "project": "android-app"
+          }
+        }
+      ]
     }
   }
 }
