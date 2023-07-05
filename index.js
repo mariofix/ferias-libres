@@ -1,7 +1,7 @@
 import * as Sentry from "sentry-expo";
 
 Sentry.init({
-  dsn: "https://7aad586aa4bf420892c1cccf4e97ec0b@o4505459108347904.ingest.sentry.io/4505459110182912",
+  dsn: "https://9034763832904332b4f56b8520f70977@o4505459108347904.ingest.sentry.io/4505459135545344",
   enableInExpoDevelopment: true,
   debug: true,
 });
