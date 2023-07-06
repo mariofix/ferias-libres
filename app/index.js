@@ -1,9 +1,17 @@
-import { StyleSheet, View } from "react-native";
+import {
+  StyleSheet,
+  View,
+  Text,
+  FlatList,
+  ActivityIndicator,
+} from "react-native";
 import { Link, Stack } from "expo-router";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { FlashList } from "@shopify/flash-list";
 
 export default function Page() {
+  const [isLoading, setLoading] = useState(true);
   const [comunas, setComunas] = useState();
   const headers = { "User-Agent": "ferias-libres/1.1.3 app/index" };
 
@@ -20,7 +28,8 @@ export default function Page() {
       })
       .catch((err) => {
         console.log(err);
-      });
+      })
+      .finally(() => setLoading(false));
     return () => {
       cancelToken.cancel();
     };
@@ -30,17 +39,27 @@ export default function Page() {
     <View style={styles.container}>
       <Stack.Screen options={{ title: "Ferias Libres" }} />
       <View style={styles.main}>
-        {comunas?.map((comuna) => {
-          return (
-            <Link
-              key={comuna.slug}
-              href={{ pathname: "/comuna/[c]", params: { c: comuna.slug } }}
-              style={styles.subtitle}
-            >
-              {comuna.nombre}
-            </Link>
-          );
-        })}
+        {isLoading ? (
+          <ActivityIndicator />
+        ) : (
+          <FlatList
+            data={comunas}
+            keyExtractor={(item, index) => {
+              return index.toString();
+            }}
+            renderItem={({ item }) => {
+              return (
+                <Link
+                  href={{ pathname: "/comuna/[c]", params: { c: item.slug } }}
+                  key={item.slug}
+                  style={styles.subtitle}
+                >
+                  {item.nombre}
+                </Link>
+              );
+            }}
+          />
+        )}
       </View>
     </View>
   );
