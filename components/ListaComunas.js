@@ -6,7 +6,7 @@ import { StyleSheet, View, FlatList, Text } from "react-native";
 export default function ListaComunas() {
   const [comunas, setComunas] = useState();
   const headers = {
-    "User-Agent": "ferias-libres/1.2.0 components/ListaComunas",
+    "User-Agent": "ferias-libres/1.2.1 components/ListaComunas",
   };
 
   useEffect(() => {

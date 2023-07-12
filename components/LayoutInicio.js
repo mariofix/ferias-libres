@@ -8,7 +8,7 @@ export default function LayoutInicio() {
   const [comunas, setComunas] = useState();
   const [ferias, setFerias] = useState();
   const headers = {
-    "User-Agent": "ferias-libres/1.2.0 components/LayoutInicio",
+    "User-Agent": "ferias-libres/1.2.1 components/LayoutInicio",
   };
   useEffect(() => {
     const cancelToken = axios.CancelToken.source();

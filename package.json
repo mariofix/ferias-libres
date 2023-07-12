@@ -1,6 +1,6 @@
 {
   "name": "ferias-libres",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
   "scheme": "ferias",
   "main": "expo-router/entry",
@@ -25,7 +25,7 @@
     "sentry-expo": "~7.0.0",
     "expo-application": "~5.3.0",
     "expo-device": "~5.4.0",
-    "expo-updates": "~0.18.9",
+    "expo-updates": "~0.18.10",
     "@sentry/react-native": "5.5.0"
   },
   "devDependencies": {
