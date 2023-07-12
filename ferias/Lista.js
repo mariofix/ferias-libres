@@ -1,1 +1,0 @@
-// const info = require(`../../assets/${comuna}.json`);

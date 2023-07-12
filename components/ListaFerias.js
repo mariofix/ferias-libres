@@ -10,7 +10,7 @@ export default function ListaFerias() {
   const [listaFerias, setListaFerias] = useState();
   const [modalVisible, setModalVisible] = useState(false);
   const headers = {
-    "User-Agent": "ferias-libres/1.1.5 components/ListaFerias",
+    "User-Agent": "ferias-libres/1.2.0 components/ListaFerias",
   };
   const { comuna } = useLocalSearchParams();
 

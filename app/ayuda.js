@@ -1,7 +1,7 @@
-import { Stack } from "expo-router";
+import { Stack } from "expo-router/stack";
 import { StyleSheet, View, Linking } from "react-native";
 import React from "react";
-import { Text, Card, IconButton, Icon } from "react-native-paper";
+import { Text, Card, IconButton, Icon } from "react-native";
 
 const InformationPage = () => {
   const handleOpenLink = (url) => {

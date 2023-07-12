@@ -1,12 +1,12 @@
 import { StyleSheet, View } from "react-native";
-import { Stack } from "expo-router";
-import ListaComunas from "../components/ListaComunas";
+import { Stack } from "expo-router/stack";
+import LayoutInicio from "../components/LayoutInicio";
 
-export default function Page() {
+export default function Index() {
   return (
     <View style={styles.container}>
       <Stack.Screen options={{ title: "Ferias Libres" }} />
-      <ListaComunas />
+      <LayoutInicio />
     </View>
   );
 }
