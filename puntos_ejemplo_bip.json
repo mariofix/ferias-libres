@@ -1,0 +1,2352 @@
+[
+    {
+        "id": 165435,
+        "pos": [
+            -33.45307833,
+            -70.61985629
+        ],
+        "name": "LIDER EXPRESS SANTA ISABEL",
+        "comuna": "PROVIDENCIA",
+        "type": 1,
+        "direccion": "AV. SANTA ISABEL 861",
+        "horarios": [
+            "Lunes a Viernes: de 08:30 a 18:00",
+            "Sábado: de 09:00 a 14:00"
+        ],
+        "distancia": -0.21191432595399765
+    },
+    {
+        "id": 3906,
+        "cod": "PD784",
+        "pos": [
+            -33.4533472,
+            -70.6191868
+        ],
+        "name": "Avenida Irarrázaval esq. Obispo Orrego",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 167,
+                "cod": "505",
+                "destino": "a Peñalolén",
+                "orden": 65,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Peñalolén"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 183,
+                "cod": "514",
+                "destino": "a San Luis de Macul",
+                "orden": 68,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a San Luis de Macul"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 312,
+                "cod": "514c",
+                "destino": "a San Luis de Macul",
+                "orden": 10,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a San Luis de Macul"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": -0.19321533624949472
+    },
+    {
+        "id": 3899,
+        "cod": "PD324",
+        "pos": [
+            -33.4533058,
+            -70.620201
+        ],
+        "name": "Avenida Irarrázaval esq. Avenida Salvador",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 79,
+                "cod": "227",
+                "destino": "a Pedro Aguirre Cerda",
+                "orden": 27,
+                "color": "#0077bb",
+                "negocio": {
+                    "nombre": "SU-BUS Chile S.A.",
+                    "color": "#0077bb"
+                },
+                "recorrido": {
+                    "destino": "a Pedro Aguirre Cerda"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U2"
+            },
+            {
+                "id": 140,
+                "cod": "422",
+                "destino": "a Pob. Teniente Merino",
+                "orden": 36,
+                "color": "#F7941D",
+                "negocio": {
+                    "nombre": "Express de Santiago Uno S.A.",
+                    "color": "#F7941D"
+                },
+                "recorrido": {
+                    "destino": "a Pob. Teniente Merino"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U4"
+            },
+            {
+                "id": 1060,
+                "cod": "403",
+                "destino": "a Metro Santa Ana",
+                "orden": 31,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "RBU US6",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Metro Santa Ana"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U13"
+            },
+            {
+                "id": 184,
+                "cod": "514",
+                "destino": "a ENEA",
+                "orden": 51,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a ENEA"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 182,
+                "cod": "513",
+                "destino": "a El Montijo",
+                "orden": 38,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a El Montijo"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": true,
+                "codigo": "U5"
+            },
+            {
+                "id": 1329,
+                "cod": "D03",
+                "destino": "a Metro Toesca",
+                "orden": 40,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Metro Toesca"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            },
+            {
+                "id": 313,
+                "cod": "514c",
+                "destino": "a Metro Salvador",
+                "orden": 51,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Metro Salvador"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 168,
+                "cod": "505",
+                "destino": "a Cerro Navia",
+                "orden": 41,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Cerro Navia"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 174,
+                "cod": "508",
+                "destino": "a Av. Mapocho",
+                "orden": 38,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Mapocho"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 773,
+                "cod": "325",
+                "destino": "a Metro Irarrázaval",
+                "orden": 65,
+                "color": "#00A77E",
+                "negocio": {
+                    "nombre": "Buses Vule S.A.",
+                    "color": "#00A77E"
+                },
+                "recorrido": {
+                    "destino": "a Metro Irarrázaval"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U3"
+            }
+        ],
+        "distancia": -0.17126728882070053
+    },
+    {
+        "id": 3965,
+        "cod": "PD483",
+        "pos": [
+            -33.4530518,
+            -70.6207999
+        ],
+        "name": "Avenida Salvador esq. Av. Irarrázaval",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 173,
+                "cod": "508",
+                "destino": "a Av. Las Torres",
+                "orden": 64,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Las Torres"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": -0.12805762771776796
+    },
+    {
+        "id": 3975,
+        "cod": "PD519",
+        "pos": [
+            -33.4524401,
+            -70.6208093
+        ],
+        "name": "Avenida Salvador esq. Colo Colo",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 313,
+                "cod": "514c",
+                "destino": "a Metro Salvador",
+                "orden": 52,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Metro Salvador"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 184,
+                "cod": "514",
+                "destino": "a ENEA",
+                "orden": 52,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a ENEA"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 168,
+                "cod": "505",
+                "destino": "a Cerro Navia",
+                "orden": 42,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Cerro Navia"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 174,
+                "cod": "508",
+                "destino": "a Av. Mapocho",
+                "orden": 38,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Mapocho"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": -0.11742245701655149
+    },
+    {
+        "id": 164765,
+        "pos": [
+            -33.452439,
+            -70.620809
+        ],
+        "name": "FRUTERIA",
+        "comuna": "ÑUÑOA",
+        "type": 1,
+        "direccion": "SALVADOR 2136 LOCAL A",
+        "distancia": -0.1173996342457409
+    },
+    {
+        "id": 3905,
+        "cod": "PD331",
+        "pos": [
+            -33.453606,
+            -70.6208604
+        ],
+        "name": "Avenida Irarrázaval esq. Avenida Salvador",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 1330,
+                "cod": "D03",
+                "destino": "a Las Parcelas",
+                "orden": 14,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Las Parcelas"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            },
+            {
+                "id": 80,
+                "cod": "227",
+                "destino": "a La Reina",
+                "orden": 44,
+                "color": "#0077bb",
+                "negocio": {
+                    "nombre": "SU-BUS Chile S.A.",
+                    "color": "#0077bb"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U2"
+            },
+            {
+                "id": 181,
+                "cod": "513",
+                "destino": "a José Arrieta",
+                "orden": 56,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a José Arrieta"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": true,
+                "codigo": "U5"
+            },
+            {
+                "id": 774,
+                "cod": "325",
+                "destino": "a Gabriela",
+                "orden": 5,
+                "color": "#00A77E",
+                "negocio": {
+                    "nombre": "Buses Vule S.A.",
+                    "color": "#00A77E"
+                },
+                "recorrido": {
+                    "destino": "a Gabriela"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U3"
+            },
+            {
+                "id": 1059,
+                "cod": "403",
+                "destino": "a La Reina",
+                "orden": 16,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "RBU US6",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U13"
+            },
+            {
+                "id": 139,
+                "cod": "422",
+                "destino": "a La Reina",
+                "orden": 59,
+                "color": "#F7941D",
+                "negocio": {
+                    "nombre": "Express de Santiago Uno S.A.",
+                    "color": "#F7941D"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U4"
+            }
+        ],
+        "distancia": -0.10156344264125147
+    },
+    {
+        "id": 4101,
+        "cod": "PD501",
+        "pos": [
+            -33.45285,
+            -70.6178227
+        ],
+        "name": "José Manuel Infante esq. Av. Irarrázaval",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 167,
+                "cod": "505",
+                "destino": "a Peñalolén",
+                "orden": 66,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Peñalolén"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 183,
+                "cod": "514",
+                "destino": "a San Luis de Macul",
+                "orden": 68,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a San Luis de Macul"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 173,
+                "cod": "508",
+                "destino": "a Av. Las Torres",
+                "orden": 65,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Las Torres"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": -0.09383840353446274
+    },
+    {
+        "id": 3898,
+        "cod": "PD323",
+        "pos": [
+            -33.4529298,
+            -70.617526
+        ],
+        "name": "Avenida Irarrázaval esq. José M. Infante",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 182,
+                "cod": "513",
+                "destino": "a El Montijo",
+                "orden": 37,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a El Montijo"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": true,
+                "codigo": "U5"
+            },
+            {
+                "id": 313,
+                "cod": "514c",
+                "destino": "a Metro Salvador",
+                "orden": 50,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Metro Salvador"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 168,
+                "cod": "505",
+                "destino": "a Cerro Navia",
+                "orden": 40,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Cerro Navia"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 773,
+                "cod": "325",
+                "destino": "a Metro Irarrázaval",
+                "orden": 64,
+                "color": "#00A77E",
+                "negocio": {
+                    "nombre": "Buses Vule S.A.",
+                    "color": "#00A77E"
+                },
+                "recorrido": {
+                    "destino": "a Metro Irarrázaval"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U3"
+            },
+            {
+                "id": 1060,
+                "cod": "403",
+                "destino": "a Metro Santa Ana",
+                "orden": 30,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "RBU US6",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Metro Santa Ana"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U13"
+            },
+            {
+                "id": 1329,
+                "cod": "D03",
+                "destino": "a Metro Toesca",
+                "orden": 39,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Metro Toesca"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            },
+            {
+                "id": 140,
+                "cod": "422",
+                "destino": "a Pob. Teniente Merino",
+                "orden": 35,
+                "color": "#F7941D",
+                "negocio": {
+                    "nombre": "Express de Santiago Uno S.A.",
+                    "color": "#F7941D"
+                },
+                "recorrido": {
+                    "destino": "a Pob. Teniente Merino"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U4"
+            },
+            {
+                "id": 79,
+                "cod": "227",
+                "destino": "a Pedro Aguirre Cerda",
+                "orden": 26,
+                "color": "#0077bb",
+                "negocio": {
+                    "nombre": "SU-BUS Chile S.A.",
+                    "color": "#0077bb"
+                },
+                "recorrido": {
+                    "destino": "a Pedro Aguirre Cerda"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U2"
+            },
+            {
+                "id": 174,
+                "cod": "508",
+                "destino": "a Av. Mapocho",
+                "orden": 37,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Mapocho"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 184,
+                "cod": "514",
+                "destino": "a ENEA",
+                "orden": 50,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a ENEA"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": -0.06637026531310755
+    },
+    {
+        "id": 4057,
+        "cod": "PD348",
+        "pos": [
+            -33.4541711,
+            -70.6207899
+        ],
+        "name": "Dublé Almeyda esq. Avenida Salvador",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 1059,
+                "cod": "403",
+                "destino": "a La Reina",
+                "orden": 17,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "RBU US6",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U13"
+            },
+            {
+                "id": 181,
+                "cod": "513",
+                "destino": "a José Arrieta",
+                "orden": 57,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a José Arrieta"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": true,
+                "codigo": "U5"
+            },
+            {
+                "id": 80,
+                "cod": "227",
+                "destino": "a La Reina",
+                "orden": 41,
+                "color": "#0077bb",
+                "negocio": {
+                    "nombre": "SU-BUS Chile S.A.",
+                    "color": "#0077bb"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U2"
+            },
+            {
+                "id": 774,
+                "cod": "325",
+                "destino": "a Gabriela",
+                "orden": 3,
+                "color": "#00A77E",
+                "negocio": {
+                    "nombre": "Buses Vule S.A.",
+                    "color": "#00A77E"
+                },
+                "recorrido": {
+                    "destino": "a Gabriela"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U3"
+            },
+            {
+                "id": 139,
+                "cod": "422",
+                "destino": "a La Reina",
+                "orden": 59,
+                "color": "#F7941D",
+                "negocio": {
+                    "nombre": "Express de Santiago Uno S.A.",
+                    "color": "#F7941D"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U4"
+            },
+            {
+                "id": 1330,
+                "cod": "D03",
+                "destino": "a Las Parcelas",
+                "orden": 16,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Las Parcelas"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            },
+            {
+                "id": 1327,
+                "cod": "D02",
+                "destino": "a Álvaro Casanova",
+                "orden": 3,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Álvaro Casanova"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            }
+        ],
+        "distancia": -0.06516802178080142
+    },
+    {
+        "id": 164249,
+        "pos": [
+            -33.45319331,
+            -70.61723466
+        ],
+        "name": "GASPAR",
+        "comuna": "ÑUÑOA",
+        "type": 1,
+        "direccion": "AV. IRARRAZAVAL 1317",
+        "distancia": -0.03693007883766197
+    },
+    {
+        "id": 4060,
+        "cod": "PD349",
+        "pos": [
+            -33.4544646,
+            -70.6181295
+        ],
+        "name": "Dublé Almeyda esq. José M. Infante",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 181,
+                "cod": "513",
+                "destino": "a José Arrieta",
+                "orden": 58,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a José Arrieta"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": true,
+                "codigo": "U5"
+            },
+            {
+                "id": 80,
+                "cod": "227",
+                "destino": "a La Reina",
+                "orden": 42,
+                "color": "#0077bb",
+                "negocio": {
+                    "nombre": "SU-BUS Chile S.A.",
+                    "color": "#0077bb"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U2"
+            },
+            {
+                "id": 1327,
+                "cod": "D02",
+                "destino": "a Álvaro Casanova",
+                "orden": 4,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Álvaro Casanova"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            },
+            {
+                "id": 1330,
+                "cod": "D03",
+                "destino": "a Las Parcelas",
+                "orden": 17,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Las Parcelas"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            },
+            {
+                "id": 139,
+                "cod": "422",
+                "destino": "a La Reina",
+                "orden": 60,
+                "color": "#F7941D",
+                "negocio": {
+                    "nombre": "Express de Santiago Uno S.A.",
+                    "color": "#F7941D"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U4"
+            },
+            {
+                "id": 1059,
+                "cod": "403",
+                "destino": "a La Reina",
+                "orden": 18,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "RBU US6",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U13"
+            },
+            {
+                "id": 774,
+                "cod": "325",
+                "destino": "a Gabriela",
+                "orden": 4,
+                "color": "#00A77E",
+                "negocio": {
+                    "nombre": "Buses Vule S.A.",
+                    "color": "#00A77E"
+                },
+                "recorrido": {
+                    "destino": "a Gabriela"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U3"
+            }
+        ],
+        "distancia": -0.03484965182795377
+    },
+    {
+        "id": 3907,
+        "cod": "PD332",
+        "pos": [
+            -33.4530867,
+            -70.616928
+        ],
+        "name": "Avenida Irarrázaval esq. Capitán Fuentes",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 1059,
+                "cod": "403",
+                "destino": "a La Reina",
+                "orden": 17,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "RBU US6",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U13"
+            },
+            {
+                "id": 181,
+                "cod": "513",
+                "destino": "a José Arrieta",
+                "orden": 57,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a José Arrieta"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": true,
+                "codigo": "U5"
+            },
+            {
+                "id": 312,
+                "cod": "514c",
+                "destino": "a San Luis de Macul",
+                "orden": 11,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a San Luis de Macul"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 167,
+                "cod": "505",
+                "destino": "a Peñalolén",
+                "orden": 66,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Peñalolén"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 774,
+                "cod": "325",
+                "destino": "a Gabriela",
+                "orden": 6,
+                "color": "#00A77E",
+                "negocio": {
+                    "nombre": "Buses Vule S.A.",
+                    "color": "#00A77E"
+                },
+                "recorrido": {
+                    "destino": "a Gabriela"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U3"
+            },
+            {
+                "id": 1330,
+                "cod": "D03",
+                "destino": "a Las Parcelas",
+                "orden": 15,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Las Parcelas"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            },
+            {
+                "id": 80,
+                "cod": "227",
+                "destino": "a La Reina",
+                "orden": 45,
+                "color": "#0077bb",
+                "negocio": {
+                    "nombre": "SU-BUS Chile S.A.",
+                    "color": "#0077bb"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U2"
+            },
+            {
+                "id": 139,
+                "cod": "422",
+                "destino": "a La Reina",
+                "orden": 60,
+                "color": "#F7941D",
+                "negocio": {
+                    "nombre": "Express de Santiago Uno S.A.",
+                    "color": "#F7941D"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U4"
+            },
+            {
+                "id": 183,
+                "cod": "514",
+                "destino": "a San Luis de Macul",
+                "orden": 69,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a San Luis de Macul"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": -0.009949618727195408
+    },
+    {
+        "id": 3974,
+        "cod": "PD642",
+        "pos": [
+            -33.4548648,
+            -70.6206072
+        ],
+        "name": "Avenida Salvador esq. Republica de Israel",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 174,
+                "cod": "508",
+                "destino": "a Av. Mapocho",
+                "orden": 37,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Mapocho"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": -0.008957389692954898
+    },
+    {
+        "id": 164007,
+        "pos": [
+            -33.451668,
+            -70.616814
+        ],
+        "name": "EL RINCON",
+        "comuna": "ÑUÑOA",
+        "type": 1,
+        "direccion": "ROMAN DIAZ 2235",
+        "distancia": 0.03565056009650286
+    },
+    {
+        "id": 3966,
+        "cod": "PD586",
+        "pos": [
+            -33.4553398,
+            -70.6207319
+        ],
+        "name": "Avenida Salvador esq. José Dgo. Cañas",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 173,
+                "cod": "508",
+                "destino": "a Av. Las Torres",
+                "orden": 65,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Las Torres"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": 0.044128025373886215
+    },
+    {
+        "id": 3971,
+        "cod": "PD520",
+        "pos": [
+            -33.4504195,
+            -70.6214719
+        ],
+        "name": "Avenida Salvador esq. Avenida Sucre",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 184,
+                "cod": "514",
+                "destino": "a ENEA",
+                "orden": 53,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a ENEA"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 168,
+                "cod": "505",
+                "destino": "a Cerro Navia",
+                "orden": 43,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Cerro Navia"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 313,
+                "cod": "514c",
+                "destino": "a Metro Salvador",
+                "orden": 53,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Metro Salvador"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 174,
+                "cod": "508",
+                "destino": "a Av. Mapocho",
+                "orden": 39,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Mapocho"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": 0.08277264133697804
+    },
+    {
+        "id": 164006,
+        "pos": [
+            -33.44999674,
+            -70.62036234
+        ],
+        "name": "BELORADO",
+        "comuna": "ÑUÑOA",
+        "type": 1,
+        "direccion": "JULIO PRADO 1885",
+        "distancia": 0.08454759420313251
+    },
+    {
+        "id": 4195,
+        "cod": "PD1273",
+        "pos": [
+            -33.4501597,
+            -70.6211449
+        ],
+        "name": "Sucre esq. Avenida Salvador",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 1347,
+                "cod": "D18",
+                "destino": "a Metro Santa Isabel",
+                "orden": 52,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Metro Santa Isabel"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            }
+        ],
+        "distancia": 0.09267704922067105
+    },
+    {
+        "id": 3969,
+        "cod": "PD482",
+        "pos": [
+            -33.4501028,
+            -70.6216554
+        ],
+        "name": "Avenida Salvador esq. Avenida Sucre",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 312,
+                "cod": "514c",
+                "destino": "a San Luis de Macul",
+                "orden": 9,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a San Luis de Macul"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 167,
+                "cod": "505",
+                "destino": "a Peñalolén",
+                "orden": 64,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Peñalolén"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 183,
+                "cod": "514",
+                "destino": "a San Luis de Macul",
+                "orden": 67,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a San Luis de Macul"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 173,
+                "cod": "508",
+                "destino": "a Av. Las Torres",
+                "orden": 63,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Las Torres"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": 0.12167773953944494
+    },
+    {
+        "id": 3904,
+        "cod": "PD330",
+        "pos": [
+            -33.4532297,
+            -70.623502
+        ],
+        "name": "Avenida Irarrázaval esq. Matta-Oriente",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 1059,
+                "cod": "403",
+                "destino": "a La Reina",
+                "orden": 15,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "RBU US6",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U13"
+            },
+            {
+                "id": 139,
+                "cod": "422",
+                "destino": "a La Reina",
+                "orden": 58,
+                "color": "#F7941D",
+                "negocio": {
+                    "nombre": "Express de Santiago Uno S.A.",
+                    "color": "#F7941D"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U4"
+            },
+            {
+                "id": 181,
+                "cod": "513",
+                "destino": "a José Arrieta",
+                "orden": 55,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a José Arrieta"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": true,
+                "codigo": "U5"
+            },
+            {
+                "id": 80,
+                "cod": "227",
+                "destino": "a La Reina",
+                "orden": 43,
+                "color": "#0077bb",
+                "negocio": {
+                    "nombre": "SU-BUS Chile S.A.",
+                    "color": "#0077bb"
+                },
+                "recorrido": {
+                    "destino": "a La Reina"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U2"
+            },
+            {
+                "id": 1327,
+                "cod": "D02",
+                "destino": "a Álvaro Casanova",
+                "orden": 2,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Álvaro Casanova"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            },
+            {
+                "id": 774,
+                "cod": "325",
+                "destino": "a Gabriela",
+                "orden": 4,
+                "color": "#00A77E",
+                "negocio": {
+                    "nombre": "Buses Vule S.A.",
+                    "color": "#00A77E"
+                },
+                "recorrido": {
+                    "destino": "a Gabriela"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U3"
+            },
+            {
+                "id": 1330,
+                "cod": "D03",
+                "destino": "a Las Parcelas",
+                "orden": 13,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Las Parcelas"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            }
+        ],
+        "distancia": 0.1239576436989524
+    },
+    {
+        "id": 165116,
+        "pos": [
+            -33.45320082,
+            -70.61544197
+        ],
+        "name": "310-MONTSERRAT IRARRAZAVAL",
+        "comuna": "NUNOA",
+        "type": 1,
+        "direccion": "AV. IRARRAZAVAL 1489",
+        "horarios": [
+            "Lunes a Viernes: de 09:00 a 21:00",
+            "Sábado: de 09:00 a 21:00"
+        ],
+        "distancia": 0.12885694097070977
+    },
+    {
+        "id": 4194,
+        "cod": "PD1272",
+        "pos": [
+            -33.4495408,
+            -70.618
+        ],
+        "name": "Sucre esq. José M. Infante",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 1347,
+                "cod": "D18",
+                "destino": "a Metro Santa Isabel",
+                "orden": 51,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Metro Santa Isabel"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            }
+        ],
+        "distancia": 0.15069774427052085
+    },
+    {
+        "id": 3900,
+        "cod": "PD325",
+        "pos": [
+            -33.4527927,
+            -70.6239999
+        ],
+        "name": "Avenida Irarrázaval esq. Avenida Condell",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 1329,
+                "cod": "D03",
+                "destino": "a Metro Toesca",
+                "orden": 41,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Metro Toesca"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            },
+            {
+                "id": 182,
+                "cod": "513",
+                "destino": "a El Montijo",
+                "orden": 39,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a El Montijo"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": true,
+                "codigo": "U5"
+            },
+            {
+                "id": 79,
+                "cod": "227",
+                "destino": "a Pedro Aguirre Cerda",
+                "orden": 28,
+                "color": "#0077bb",
+                "negocio": {
+                    "nombre": "SU-BUS Chile S.A.",
+                    "color": "#0077bb"
+                },
+                "recorrido": {
+                    "destino": "a Pedro Aguirre Cerda"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U2"
+            },
+            {
+                "id": 184,
+                "cod": "514",
+                "destino": "a ENEA",
+                "orden": 52,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a ENEA"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 174,
+                "cod": "508",
+                "destino": "a Av. Mapocho",
+                "orden": 39,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Mapocho"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 168,
+                "cod": "505",
+                "destino": "a Cerro Navia",
+                "orden": 42,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Cerro Navia"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 773,
+                "cod": "325",
+                "destino": "a Metro Irarrázaval",
+                "orden": 66,
+                "color": "#00A77E",
+                "negocio": {
+                    "nombre": "Buses Vule S.A.",
+                    "color": "#00A77E"
+                },
+                "recorrido": {
+                    "destino": "a Metro Irarrázaval"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U3"
+            },
+            {
+                "id": 140,
+                "cod": "422",
+                "destino": "a Pob. Teniente Merino",
+                "orden": 37,
+                "color": "#F7941D",
+                "negocio": {
+                    "nombre": "Express de Santiago Uno S.A.",
+                    "color": "#F7941D"
+                },
+                "recorrido": {
+                    "destino": "a Pob. Teniente Merino"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U4"
+            },
+            {
+                "id": 1060,
+                "cod": "403",
+                "destino": "a Metro Santa Ana",
+                "orden": 32,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "RBU US6",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Metro Santa Ana"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U13"
+            }
+        ],
+        "distancia": 0.16877381729628677
+    },
+    {
+        "id": 3771,
+        "cod": "PD774",
+        "pos": [
+            -33.4567279,
+            -70.6206023
+        ],
+        "name": "Av. Castillo Velasco esq. Avenida Salvador",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 1328,
+                "cod": "D02",
+                "destino": "a Metro Irarrázaval",
+                "orden": 50,
+                "color": "#cf152d",
+                "negocio": {
+                    "nombre": "STU US5",
+                    "color": "#cf152d"
+                },
+                "recorrido": {
+                    "destino": "a Metro Irarrázaval"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U12"
+            }
+        ],
+        "distancia": 0.1878188321600337
+    },
+    {
+        "id": 4102,
+        "cod": "PD500",
+        "pos": [
+            -33.4489984,
+            -70.6184225
+        ],
+        "name": "José Manuel Infante esq. Avenida Sucre",
+        "comuna": "ÑUÑOA",
+        "type": 0,
+        "servicios": [
+            {
+                "id": 173,
+                "cod": "508",
+                "destino": "a Av. Las Torres",
+                "orden": 64,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Av. Las Torres"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 167,
+                "cod": "505",
+                "destino": "a Peñalolén",
+                "orden": 65,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a Peñalolén"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            },
+            {
+                "id": 183,
+                "cod": "514",
+                "destino": "a San Luis de Macul",
+                "orden": 67,
+                "color": "#0093B3",
+                "negocio": {
+                    "nombre": "Buses Metropolitana S.A.",
+                    "color": "#0093B3"
+                },
+                "recorrido": {
+                    "destino": "a San Luis de Macul"
+                },
+                "horarios": [
+                    {}
+                ],
+                "paradas": [],
+                "shapes": [],
+                "itinerario": false,
+                "codigo": "U5"
+            }
+        ],
+        "distancia": 0.19745997827710227
+    },
+    {
+        "id": 165472,
+        "pos": [
+            -33.45318402,
+            -70.61449085
+        ],
+        "name": "Ok Market Ciudad Empresarial",
+        "comuna": "HUECHURABA",
+        "type": 1,
+        "direccion": "AVENIDA SANTA CLARA 354, LOCALES 102 Y 107",
+        "horarios": [
+            "Lunes a Viernes: de 09:20 a 18:00",
+            "Sábado: de 09:20 a 18:00",
+            "Domingo y Festivos: de 09:20 a 18:00"
+        ],
+        "distancia": 0.2169381342358524
+    },
+    {
+        "id": 164456,
+        "pos": [
+            -33.45305245,
+            -70.61406311
+        ],
+        "name": "PO LOTO",
+        "comuna": "ÑUÑOA",
+        "type": 1,
+        "direccion": "FAUSTINO SARMIENTO 26",
+        "distancia": 0.2559746205676705
+    },
+    {
+        "id": 164628,
+        "pos": [
+            -33.451478,
+            -70.624688
+        ],
+        "name": "BELINDA",
+        "comuna": "ÑUÑOA",
+        "type": 1,
+        "direccion": "CONDELL 1807 LOCAL 2",
+        "distancia": 0.2583008595374525
+    },
+    {
+        "id": 165320,
+        "pos": [
+            -33.453507,
+            -70.613826
+        ],
+        "name": "METRO MONSEÑOR EYZAGUIRRE",
+        "comuna": "ÑUÑOA",
+        "type": 1,
+        "direccion": "MONSEÑOR EYZAGUIRRE 39",
+        "horarios": [
+            "Lunes a Viernes: de 06:00 a 19:30",
+            "Sábado: de 06:30 a 19:30",
+            "Domingo y Festivos: de 08:00 a 19:30"
+        ],
+        "distancia": 0.2819594621833824
+    }
+]

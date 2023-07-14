@@ -1,37 +1,36 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 import * as Linking from "expo-linking";
+import { Entypo } from "@expo/vector-icons";
+import { Link } from "expo-router";
 
 export default function ListaFeriasItem({ data }) {
   return (
     <View style={styles.container}>
-      <View style={styles.layout}>
-        <View style={styles.contentLayout}>
-          <View style={[styles.icon, { backgroundColor: "#34D058" }]} />
-          <View>
-            <Text style={styles.title}>{data.nombre}</Text>
-            <Text style={styles.location}>
-              {data.comuna_str} - {data.dias_str}
-            </Text>
+      <Link href={`/info?feria=${data.slug}`}>
+        <View style={styles.layout}>
+          <View style={styles.contentLayout}>
+            <Entypo
+              name="shop"
+              size={31}
+              color="#60a37c"
+              style={[styles.icon]}
+            />
+            <View>
+              <Text style={styles.title}>{data.nombre}</Text>
+              <Text style={styles.location}>
+                {data.comuna_str} - {data.dias_str}
+              </Text>
+            </View>
           </View>
         </View>
-        <Text
-          style={[styles.icon, { backgroundColor: "lightblue" }]}
-          onPress={() => {
-            let qs = data.latlng.join();
-            let link = `geo:${qs},500?q=Feria ${data.nombre}`;
-            Linking.openURL(link);
-          }}
-        >
-          mapa
-        </Text>
-      </View>
+      </Link>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: 16,
+    paddingVertical: 8,
     paddingHorizontal: 20,
     backgroundColor: "#fff",
     borderBottomWidth: 1,
@@ -52,7 +51,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 15,
     fontWeight: "500",
-    marginBottom: 6,
+    marginBottom: 5,
   },
   location: {
     color: "#666",
@@ -68,8 +67,8 @@ const styles = StyleSheet.create({
     alignSelf: "flex-start",
   },
   icon: {
-    height: 36,
-    width: 36,
+    height: 32,
+    width: 32,
     borderRadius: 6,
     marginRight: 10,
     alignSelf: "center",

@@ -4,7 +4,7 @@
     "name": "Ferias Libres",
     "slug": "ferias-libres",
     "description": "Ferias Libres de Chile",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "githubUrl": "https://github.com/mariofix/ferias-libres",
     "orientation": "portrait",
     "assetBundlePatterns": [
@@ -20,10 +20,10 @@
       "backgroundColor": "#ffffff"
     },
     "icon": "./assets/icon.png",
-    "version": "1.2.1",
+    "version": "1.3.0",
     "android": {
       "package": "com.mariofix.feriaslibres",
-      "versionCode": 121,
+      "versionCode": 130,
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
@@ -35,20 +35,11 @@
       }
     },
     "plugins": [
-      "sentry-expo",
       "expo-router"
     ],
-    "hooks": {
-      "postPublish": [
-        {
-          "file": "sentry-expo/upload-sourcemaps",
-          "config": {
-            "organization": "ferias-libres",
-            "project": "android-app",
-            "authToken": false
-          }
-        }
-      ]
+    "experiments": {
+      "tsconfigPaths": true,
+      "typedRoutes": true
     }
   }
 }
