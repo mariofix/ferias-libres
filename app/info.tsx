@@ -15,7 +15,7 @@ export default function InfoFeriaScreen() {
   const [info, setInfo]: any = useState();
   const [semana, setSemana]: any = useState();
   const headers = {
-    "User-Agent": "ferias-libres/1.3.0 app/info",
+    "User-Agent": "ferias-libres/1.3.1 app/info",
   };
 
   useEffect(() => {
@@ -82,7 +82,7 @@ export default function InfoFeriaScreen() {
         <Pressable
           onPress={() => {
             let qs = renderLatLongGeo(info.latlng);
-            let link = `geo:${qs},500?q=Feria ${info.nombre}`;
+            let link = `geo:${qs},500?q=Feria%20${info.nombre}`;
             Linking.openURL(link);
           }}
           style={styles.content}
@@ -100,7 +100,7 @@ export default function InfoFeriaScreen() {
         <Pressable
           onPress={() => {
             let qs = renderLatLongGeo(info.latlng);
-            let link = `http://google.com/maps/search/?api=1&query=${qs}`;
+            let link = `http://maps.google.com/maps/?q=${info.nombre}@${qs}`;
             Linking.openURL(link);
           }}
           style={styles.content}
@@ -110,9 +110,8 @@ export default function InfoFeriaScreen() {
         </Pressable>
         <Pressable
           onPress={() => {
-            Linking.openURL(
-              `https://openstreetmap.cl/#19/${info.latlng[0]}/${info.latlng[1]}`
-            );
+            let link = `https://openstreetmap.cl/#19/${info.latlng[0]}/${info.latlng[1]}`;
+            Linking.openURL(link);
           }}
           style={styles.content}
         >

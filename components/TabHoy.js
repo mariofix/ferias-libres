@@ -4,22 +4,20 @@ import FeriaHoyItem from "./FeriaHoyItem";
 import { StyleSheet, View, FlatList, Text, Button } from "react-native";
 
 export default function TabHoy() {
-  const [comunas, setComunas] = useState();
   const [ferias, setFerias] = useState();
   const headers = {
-    "User-Agent": "ferias-libres/1.3.0 components/TabHoy",
+    "User-Agent": "ferias-libres/1.3.1 components/TabHoy",
   };
   useEffect(() => {
     const cancelToken = axios.CancelToken.source();
 
     axios
-      .get("https://ferias-libres.mariofix.com/api/datos/app/index", {
+      .get("https://ferias-libres.mariofix.com/api/datos/app/hoy", {
         cancelToken: cancelToken.token,
         headers: headers,
       })
       .then((respuesta) => {
-        setComunas(respuesta.data.todas_las_comunas);
-        setFerias(respuesta.data.ferias_de_hoy);
+        setFerias(respuesta.data.datos);
       })
       .catch((err) => {
         console.log(err);

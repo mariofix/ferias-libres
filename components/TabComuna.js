@@ -1,25 +1,27 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import TabComunaItem from "./TabComunaItem";
-import { StyleSheet, View, FlatList, Text, Button } from "react-native";
+import { StyleSheet, View, FlatList, TextInput } from "react-native";
 
 export default function TabHoy() {
-  const [comunas, setComunas] = useState();
-  const [ferias, setFerias] = useState();
   const headers = {
-    "User-Agent": "ferias-libres/1.3.0 components/TabHoy",
+    "User-Agent": "ferias-libres/1.3.1 components/TabComuna",
   };
+  const [search, setSearch] = useState("");
+  const [filteredDataSource, setFilteredDataSource] = useState([]);
+  const [masterDataSource, setMasterDataSource] = useState([]);
+
   useEffect(() => {
     const cancelToken = axios.CancelToken.source();
 
     axios
-      .get("https://ferias-libres.mariofix.com/api/datos/app/index", {
+      .get("https://ferias-libres.mariofix.com/api/datos/app/comuna", {
         cancelToken: cancelToken.token,
         headers: headers,
       })
       .then((respuesta) => {
-        setComunas(respuesta.data.todas_las_comunas);
-        setFerias(respuesta.data.ferias_de_hoy);
+        setFilteredDataSource(respuesta.data.datos);
+        setMasterDataSource(respuesta.data.datos);
       })
       .catch((err) => {
         console.log(err);
@@ -29,20 +31,47 @@ export default function TabHoy() {
     };
   }, []);
 
+  const searchFilterFunction = (text) => {
+    console.log({ text });
+    // Check if searched text is not blank
+    if (text) {
+      // Inserted text is not blank
+      // Filter the masterDataSource and update FilteredDataSource
+      const newData = masterDataSource.filter(function (item) {
+        // Applying filter for the inserted text in search bar
+        const itemData = item.nombre
+          ? item.nombre.toLowerCase()
+          : "".toLowerCase();
+        const textData = text.toLowerCase();
+        return itemData.indexOf(textData) > -1;
+      });
+
+      setFilteredDataSource(newData);
+      setSearch(text);
+    } else {
+      // Inserted text is blank
+      // Update FilteredDataSource with masterDataSource
+      setFilteredDataSource(masterDataSource);
+      setSearch(text);
+    }
+  };
+
   return (
     <>
       <FlatList
-        data={comunas}
+        data={filteredDataSource}
         style={{ flex: 1 }}
         renderItem={({ item }) => <TabComunaItem data={item} />}
         keyExtractor={(item, index) => index.toString()}
         ListHeaderComponent={() => (
           <View style={styles.header}>
-            <Text style={styles.headerTitle}>
-              Por el momento sólo tenemos de la RM -cuentanos como te gustaria
-              navegar por las regiones, presionando el icono en la esquina
-              superior derecha.
-            </Text>
+            <TextInput
+              style={styles.textInputStyle}
+              onChangeText={(text) => searchFilterFunction(text)}
+              value={search}
+              underlineColorAndroid="transparent"
+              placeholder="Busca tu comuna"
+            />
           </View>
         )}
         stickyHeaderIndices={[0]}
@@ -62,5 +91,10 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     color: "#666",
+  },
+  textInputStyle: {
+    borderWidth: 1,
+    paddingLeft: 20,
+    borderColor: "#009688",
   },
 });

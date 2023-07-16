@@ -54,7 +54,7 @@ const InformationPage = () => {
             }}
             style={styles.content}
           >
-            <FontAwesome5 name="bolt" size={36} color="green" />
+            <FontAwesome5 name="globe" size={36} color="lightblue" />
           </Pressable>
         </View>
         <View style={styles.linksContainer}>
