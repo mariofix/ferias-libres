@@ -1,13 +1,17 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import FeriaHoyItem from "./FeriaHoyItem";
-import { StyleSheet, View, FlatList, Text, Button } from "react-native";
+import { StyleSheet, View, FlatList, Text, TextInput } from "react-native";
 
 export default function TabHoy() {
   const [ferias, setFerias] = useState();
   const headers = {
     "User-Agent": "ferias-libres/1.3.1 components/TabHoy",
   };
+  const [search, setSearch] = useState("");
+  const [filteredDataSource, setFilteredDataSource] = useState([]);
+  const [masterDataSource, setMasterDataSource] = useState([]);
+
   useEffect(() => {
     const cancelToken = axios.CancelToken.source();
 
@@ -18,6 +22,8 @@ export default function TabHoy() {
       })
       .then((respuesta) => {
         setFerias(respuesta.data.datos);
+        setFilteredDataSource(respuesta.data.datos);
+        setMasterDataSource(respuesta.data.datos);
       })
       .catch((err) => {
         console.log(err);
@@ -27,10 +33,41 @@ export default function TabHoy() {
     };
   }, []);
 
+  const searchFilterFunction = (text) => {
+    // Check if searched text is not blank
+    if (text) {
+      // Inserted text is not blank
+      // Filter the masterDataSource and update FilteredDataSource
+      const newData = masterDataSource.filter(function (item) {
+        // Applying filter for the inserted text in search bar
+        const itemData = item.comuna_str
+          ? item.comuna_str.toLowerCase()
+          : "".toLowerCase();
+        const textData = text.toLowerCase();
+        return itemData.indexOf(textData) > -1;
+      });
+
+      setFilteredDataSource(newData);
+      setSearch(text);
+    } else {
+      // Inserted text is blank
+      // Update FilteredDataSource with masterDataSource
+      setFilteredDataSource(masterDataSource);
+      setSearch(text);
+    }
+  };
+
   return (
     <>
+      <TextInput
+        style={styles.textInputStyle}
+        onChangeText={(text) => searchFilterFunction(text)}
+        value={search}
+        underlineColorAndroid="transparent"
+        placeholder="Busca tu comuna"
+      />
       <FlatList
-        data={ferias}
+        data={filteredDataSource}
         style={{ flex: 1 }}
         renderItem={({ item }) => <FeriaHoyItem data={item} />}
         keyExtractor={(item, index) => index.toString()}
@@ -58,5 +95,10 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     color: "#666",
+  },
+  textInputStyle: {
+    borderWidth: 1,
+    paddingLeft: 20,
+    borderColor: "#009688",
   },
 });

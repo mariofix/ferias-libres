@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import TabComunaItem from "./TabComunaItem";
-import { StyleSheet, View, FlatList, TextInput } from "react-native";
+import { StyleSheet, View, FlatList, TextInput, Text } from "react-native";
 
 export default function TabHoy() {
   const headers = {
@@ -32,7 +32,6 @@ export default function TabHoy() {
   }, []);
 
   const searchFilterFunction = (text) => {
-    console.log({ text });
     // Check if searched text is not blank
     if (text) {
       // Inserted text is not blank
@@ -58,6 +57,13 @@ export default function TabHoy() {
 
   return (
     <>
+      <TextInput
+        style={styles.textInputStyle}
+        onChangeText={(text) => searchFilterFunction(text)}
+        value={search}
+        underlineColorAndroid="transparent"
+        placeholder="Busca tu comuna"
+      />
       <FlatList
         data={filteredDataSource}
         style={{ flex: 1 }}
@@ -65,13 +71,9 @@ export default function TabHoy() {
         keyExtractor={(item, index) => index.toString()}
         ListHeaderComponent={() => (
           <View style={styles.header}>
-            <TextInput
-              style={styles.textInputStyle}
-              onChangeText={(text) => searchFilterFunction(text)}
-              value={search}
-              underlineColorAndroid="transparent"
-              placeholder="Busca tu comuna"
-            />
+            <Text style={styles.headerTitle}>
+              Las Ferias Libres funcionan de 7 de la mañana a 5 de la tarde.
+            </Text>
           </View>
         )}
         stickyHeaderIndices={[0]}

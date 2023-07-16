@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Link } from "expo-router";
 
 export default function ListaComunasItem({ data }) {
   return (
@@ -13,7 +14,12 @@ export default function ListaComunasItem({ data }) {
             style={[styles.icon]}
           />
           <View>
-            <Text style={styles.title}>{data.nombre}</Text>
+            <Link
+              href={{ pathname: "/comuna/[c]", params: { c: data.slug } }}
+              style={styles.title}
+            >
+              <Text style={styles.title}>{data.nombre}</Text>
+            </Link>
           </View>
         </View>
       </View>

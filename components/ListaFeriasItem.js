@@ -1,63 +1,28 @@
 import { View, Text, StyleSheet } from "react-native";
-import * as Linking from "expo-linking";
+import { Link } from "expo-router";
+import { Entypo } from "@expo/vector-icons";
 
 export default function ListaFeriasItem({ data }) {
-  const renderDias = (semana) => {
-    let dias = [];
-    if (semana.lunes) {
-      dias.push("Lun");
-    }
-    if (semana.martes) {
-      dias.push("Mar");
-    }
-    if (semana.miercoles) {
-      dias.push("Mie");
-    }
-    if (semana.jueves) {
-      dias.push("Jue");
-    }
-    if (semana.viernes) {
-      dias.push("Vie");
-    }
-    if (semana.sabado) {
-      dias.push("Sab");
-    }
-    if (semana.domingo) {
-      dias.push("Dom");
-    }
-    return dias.join(", ");
-  };
-
-  const renderLatLongGeo = (ubicaciones) => {
-    let lat = ubicaciones[0].latitude;
-    let lon = ubicaciones[0].longitude;
-    let tag = `${lat},${lon}`;
-    return tag;
-  };
-
   return (
     <View style={styles.container}>
-      <View style={styles.layout}>
-        <View style={styles.contentLayout}>
-          <View style={[styles.icon, { backgroundColor: "#34D058" }]} />
-          <View>
-            <Text style={styles.title}>{data.nombre}</Text>
-            <Text style={styles.location}>
-              Dias de Postura: {renderDias(data.dias)}.
-            </Text>
+      <Link href={`/info?feria=${data.slug}`}>
+        <View style={styles.layout}>
+          <View style={styles.contentLayout}>
+            <Entypo
+              name="shop"
+              size={31}
+              color="#60a37c"
+              style={[styles.icon]}
+            />
+            <View>
+              <Text style={styles.title}>{data.nombre}</Text>
+              <Text style={styles.location}>
+                {data.comuna_str} - {data.dias_str}
+              </Text>
+            </View>
           </View>
         </View>
-        <Text
-          style={[styles.icon, { backgroundColor: "lightblue" }]}
-          onPress={() => {
-            let qs = renderLatLongGeo(data.ubicacion);
-            let link = `geo:${qs},500?q=Feria ${data.nombre}`;
-            Linking.openURL(link);
-          }}
-        >
-          MAP
-        </Text>
-      </View>
+      </Link>
     </View>
   );
 }
