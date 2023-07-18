@@ -8,7 +8,12 @@ import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
 import { useColorScheme } from "react-native";
-
+import * as Sentry from "sentry-expo";
+Sentry.init({
+  dsn: "https://9034763832904332b4f56b8520f70977@o4505459108347904.ingest.sentry.io/4505459135545344",
+  enableInExpoDevelopment: true,
+  debug: false,
+});
 export {
   // Catch any errors thrown by the Layout component.
   ErrorBoundary,
