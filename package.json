@@ -37,7 +37,7 @@
     "expo-constants": "~14.4.2",
     "expo-device": "~5.4.0",
     "expo-updates": "~0.18.10",
-    "@sentry/react-native": "5.5.0"
+    "@sentry/react-native": "5.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
